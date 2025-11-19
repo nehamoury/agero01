@@ -109,19 +109,24 @@ const TeamSection = () => {
   const duplicatedMembers = [...teamMembers, ...teamMembers];
 
   return (
-    <section className="bg-[#dbdbdb] py-20 md:py-28 font-inter">
+    <section className="bg-[#dbdbdb] py-20 md:py-28 font-inter ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <p className="text-sm uppercase tracking-widest text-gray-500 font-medium mb-2">(Our Team)</p>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-            Meet the Experts
-          </h1>
-          <p className="mt-4 text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
-            Hover to pause, click to flip. Discover the creative minds behind our success.
-          </p>
-        </div>
+<div className="relative text-center mb-5 h-[40vh] md:h-[45vh] lg:h-[20vh]">
+ 
+
+<h1
+  
+  className="absolute top-[6%] md:top-[3%] left-1/2 -translate-x-1/2 whitespace-nowrap text-[15vw] md:text-[12rem] lg:text-[10rem] font-semibold tracking-tight leading-[0.85] bg-[linear-gradient(180deg,rgba(0,0,0,0.85)_0%,rgba(0,0,0,0.05)_100%)] bg-clip-text text-transparent opacity-40 select-none z-0 pointer-events-none"
+>
+  Meet the Members
+</h1>
+
+</div>
+
+
+
       </div>
-      <div className="marquee">
+      <div className="marquee ">
         <div className="marquee-content">
           {duplicatedMembers.map((member, index) => (
             <TeamMemberCard 
